@@ -85,7 +85,7 @@ video {
 body {
   background-attachment: fixed;
   color: #444444;
-  font-family:"brandon-grotesque", sans-serif;
+  font-family: "brandon-grotesque", sans-serif;
   margin: 0 auto;
   border: 1px solid;
   border-color: #e5e5e3;
@@ -108,7 +108,10 @@ button {
   box-sizing: border-box;
   /* Opera/IE 8+ */
 }
-
+.zf-nameWrapper {
+  display: flex;
+  flex-direction: row;
+}
 img,
 a {
   border: 0px;
@@ -309,8 +312,8 @@ select:focus-visible {
   color: #000000;
   margin: 0;
   padding: 0;
-  font-size: 2em;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .zf-tempHeadContBdr .zf-frmDesc {
@@ -346,7 +349,7 @@ select:focus-visible {
 }
 
 .zf-form-sBox {
-  font-family:"brandon-grotesque", sans-serif;
+  font-family: "brandon-grotesque", sans-serif;
   padding: 15px;
   border: 1px solid #bdbcbb;
   font-size: 13px;
@@ -393,7 +396,9 @@ select:focus-visible {
 .zf-time .zf-tempContDiv label,
 .zf-address .zf-tempContDiv label,
 .zf-name .zf-tempContDiv span label {
-  color: #888888;
+  font-weight: 400;
+  font-size: 14px;
+  color: #444;
 }
 
 .zf-phone .zf-tempContDiv span label {
@@ -1303,7 +1308,21 @@ select {
   .wid {
     width: 100%;
   }
-
+  .zf-nameWrapper {
+    display: flex
+;
+    flex-direction: column;
+}
+.zf-namelarge .zf-tempContDiv span:first-child {
+  padding-bottom: 20px;
+}
+.zf-fmFooter .zf-submitColor {
+  width: 100%;
+}
+.zf-namelarge .zf-twoType .zf-nameWrapper span {
+  width: 100%;
+  margin-left: 0;
+}
   .zf-tempFrmWrapper {
     padding: 0px;
     padding-bottom: 20px;

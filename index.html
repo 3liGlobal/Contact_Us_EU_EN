@@ -1,6 +1,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact&#x20;US&#x20;EU</title>
     <link href="css/form.css" rel="stylesheet" type="text/css" />
     <script src="js/validation.js"></script>
@@ -47,13 +48,17 @@
             <ul>
               <!---------Name Starts Here---------->
               <li class="zf-tempFrmWrapper zf-name zf-namelarge">
-                <label class="zf-labelName">
+                <label class="zf-labelName" style="display: none">
                   Name
                   <em class="zf-important">*</em>
                 </label>
                 <div class="zf-tempContDiv zf-twoType">
                   <div class="zf-nameWrapper">
                     <span>
+                      <label class="zf-labelName">
+                        First Name
+                        <em class="zf-important">*</em>
+                      </label>
                       <input
                         type="text"
                         maxlength="255"
@@ -61,10 +66,13 @@
                         fieldType="7"
                         placeholder=""
                       />
-                      <label>First Name</label>
                     </span>
 
                     <span>
+                      <label class="zf-labelName">
+                        Last Name
+                        <em class="zf-important">*</em>
+                      </label>
                       <input
                         type="text"
                         maxlength="255"
@@ -72,7 +80,6 @@
                         fieldType="7"
                         placeholder=""
                       />
-                      <label>Last Name</label>
                     </span>
 
                     <div class="zf-clearBoth"></div>
@@ -82,7 +89,7 @@
                     class="zf-errorMessage"
                     style="display: none"
                   >
-                    Invalid value
+                    Please enter required field
                   </p>
                 </div>
                 <div class="zf-clearBoth"></div>
@@ -90,7 +97,7 @@
               <!---------Name Ends Here---------->
               <!---------Email Starts Here---------->
               <li class="zf-tempFrmWrapper zf-large">
-                <label class="zf-labelName"> Email </label>
+                <label class="zf-labelName"> Email <em class="zf-important">*</em></label>
                 <div class="zf-tempContDiv">
                   <span>
                     <input
@@ -108,7 +115,7 @@
                     class="zf-errorMessage"
                     style="display: none"
                   >
-                    Invalid value
+                    Please enter your email
                   </p>
                 </div>
                 <div class="zf-clearBoth"></div>
@@ -116,7 +123,7 @@
               <!---------Email Ends Here---------->
               <!---------Phone Starts Here---------->
               <li class="zf-tempFrmWrapper zf-large">
-                <label class="zf-labelName"> Phone </label>
+                <label class="zf-labelName"> Phone <em class="zf-important">*</em></label>
                 <div class="zf-tempContDiv zf-phonefld">
                   <div class="zf-phwrapper zf-phNumber">
                     <span>
@@ -143,7 +150,7 @@
                     class="zf-errorMessage"
                     style="display: none"
                   >
-                    Invalid value
+                    Please enter your Phone number
                   </p>
                 </div>
                 <div class="zf-clearBoth"></div>
@@ -157,7 +164,9 @@
                 </label>
                 <div class="zf-tempContDiv">
                   <select class="zf-form-sBox" name="Dropdown" checktype="c1">
-                    <option selected="true" value="-Select-">-Select-</option>
+                    <option selected="true" value="-Select-" disabled>
+                      Select
+                    </option>
                     <option value="Order&#x20;Status">Order Status</option>
                     <option value="Repair&#x20;Service">Repair Service</option>
                     <option value="Warranty&#x20;Registration">
@@ -184,7 +193,7 @@
                     class="zf-errorMessage"
                     style="display: none"
                   >
-                    Invalid value
+                    Please select an option
                   </p>
                 </div>
                 <div class="zf-clearBoth"></div>
@@ -236,7 +245,7 @@
                     class="zf-errorMessage"
                     style="display: none"
                   >
-                    Invalid value
+                    Please enter required field
                   </p>
                 </div>
                 <div class="zf-clearBoth"></div>
@@ -285,7 +294,13 @@
       var zf_MonthYearRegex = new RegExp(
         "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$"
       );
-      var zf_MandArray = ["Name_Last", "Dropdown", "SingleLine"];
+      var zf_MandArray = [
+        "Name_Last",
+        "Email",
+        "PhoneNumber_countrycode",
+        "Dropdown",
+        "SingleLine",
+      ];
       var zf_FieldArray = [
         "Name_First",
         "Name_Last",
