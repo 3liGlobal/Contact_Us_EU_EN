@@ -108,10 +108,6 @@ button {
   box-sizing: border-box;
   /* Opera/IE 8+ */
 }
-.zf-nameWrapper {
-  display: flex;
-  flex-direction: row;
-}
 img,
 a {
   border: 0px;
@@ -332,7 +328,7 @@ select:focus-visible {
 }
 
 .zf-tempFrmWrapper {
-  padding: 10px 15px;
+  padding: 12px 0px;
   margin: 1px 0;
   list-style: none;
 }
@@ -350,7 +346,7 @@ select:focus-visible {
 
 .zf-form-sBox {
   font-family: "brandon-grotesque", sans-serif;
-  padding: 15px;
+  padding: 18px;
   border: 1px solid #bdbcbb;
   font-size: 13px;
   border-radius: 6px;
@@ -365,7 +361,6 @@ select:focus-visible {
 
 .zf-name .zf-tempContDiv span {
   margin-bottom: 5px;
-  margin-left: 4%;
 }
 
 .zf-name .zf-tempContDiv span.last {
@@ -933,14 +928,12 @@ select {
 
 .zf-namelarge .zf-tempContDiv span {
   width: 23.5%;
-  margin-left: 2%;
   margin-right: 0;
   margin-bottom: 0;
 }
 
 .zf-namelarge .zf-twoType .zf-nameWrapper span {
-  width: 49%;
-  margin-left: 2%;
+  width: 50%;
 }
 
 .zf-namelarge .zf-threeType .zf-nameWrapper span {
@@ -1196,7 +1189,6 @@ select {
 }
 
 .zf-phwrapper span {
-  margin-bottom: 10px;
   float: left;
   width: 76%;
   margin-left: 2%;
@@ -1299,7 +1291,18 @@ select {
 .wid {
   width: 50%;
 }
+.main-f {
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+}
+.col1 {
+  width: 50%;
+}
 
+.col2 {
+  width: 50%;
+}
 @media only screen and (max-width: 600px) {
   .one-line {
     flex-direction: column;
@@ -1307,6 +1310,20 @@ select {
 
   .wid {
     width: 100%;
+  }
+  .main-f {
+    flex-direction: column;
+}
+  .col1 {
+    width: 100%;
+  }
+  .col2.none {
+    display: none;
+}
+
+  .col2 {
+    width: 100%;
+    margin-left: 0;
   }
   .zf-nameWrapper {
     display: flex

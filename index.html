@@ -54,34 +54,35 @@
                 </label>
                 <div class="zf-tempContDiv zf-twoType">
                   <div class="zf-nameWrapper">
-                    <span>
-                      <label class="zf-labelName">
-                        First Name
-                        <em class="zf-important">*</em>
-                      </label>
-                      <input
-                        type="text"
-                        maxlength="255"
-                        name="Name_First"
-                        fieldType="7"
-                        placeholder=""
-                      />
-                    </span>
+                    <div class="main-f">
+                      <span class="col1">
+                        <label class="zf-labelName">
+                          First Name
+                          <em class="zf-important">*</em>
+                        </label>
+                        <input
+                          type="text"
+                          maxlength="255"
+                          name="Name_First"
+                          fieldType="7"
+                          placeholder=""
+                        />
+                      </span>
 
-                    <span>
-                      <label class="zf-labelName">
-                        Last Name
-                        <em class="zf-important">*</em>
-                      </label>
-                      <input
-                        type="text"
-                        maxlength="255"
-                        name="Name_Last"
-                        fieldType="7"
-                        placeholder=""
-                      />
-                    </span>
-
+                      <span class="col2">
+                        <label class="zf-labelName">
+                          Last Name
+                          <em class="zf-important">*</em>
+                        </label>
+                        <input
+                          type="text"
+                          maxlength="255"
+                          name="Name_Last"
+                          fieldType="7"
+                          placeholder=""
+                        />
+                      </span>
+                    </div>
                     <div class="zf-clearBoth"></div>
                   </div>
                   <p
@@ -95,134 +96,144 @@
                 <div class="zf-clearBoth"></div>
               </li>
               <!---------Name Ends Here---------->
-              <!---------Email Starts Here---------->
-              <li class="zf-tempFrmWrapper zf-large">
-                <label class="zf-labelName"> Email <em class="zf-important">*</em></label>
-                <div class="zf-tempContDiv">
-                  <span>
-                    <input
-                      fieldType="9"
-                      type="text"
-                      maxlength="255"
-                      name="Email"
-                      checktype="c5"
-                      value=""
-                      placeholder=""
-                      id="Email"
-                  /></span>
-                  <p
-                    id="Email_error"
-                    class="zf-errorMessage"
-                    style="display: none"
+              <div class="main-f">
+                <!---------Email Starts Here---------->
+                <li class="zf-tempFrmWrapper zf-large col1">
+                  <label class="zf-labelName">
+                    Email <em class="zf-important">*</em></label
                   >
-                    Please enter your email
-                  </p>
-                </div>
-                <div class="zf-clearBoth"></div>
-              </li>
-              <!---------Email Ends Here---------->
-              <!---------Phone Starts Here---------->
-              <li class="zf-tempFrmWrapper zf-large">
-                <label class="zf-labelName"> Phone <em class="zf-important">*</em></label>
-                <div class="zf-tempContDiv zf-phonefld">
-                  <div class="zf-phwrapper zf-phNumber">
+                  <div class="zf-tempContDiv">
+                    <span>
+                      <input
+                        fieldType="9"
+                        type="text"
+                        maxlength="255"
+                        name="Email"
+                        checktype="c5"
+                        value=""
+                        placeholder=""
+                        id="Email"
+                    /></span>
+                    <p
+                      id="Email_error"
+                      class="zf-errorMessage"
+                      style="display: none"
+                    >
+                      Please enter your email
+                    </p>
+                  </div>
+                  <div class="zf-clearBoth"></div>
+                </li>
+                <!---------Email Ends Here---------->
+                <!---------Phone Starts Here---------->
+                <li class="zf-tempFrmWrapper zf-large col2">
+                  <label class="zf-labelName">
+                    Phone <em class="zf-important">*</em></label
+                  >
+                  <div class="zf-tempContDiv zf-phonefld">
+                    <div class="zf-phwrapper zf-phNumber">
+                      <span>
+                        <input
+                          type="text"
+                          compname="PhoneNumber"
+                          name="PhoneNumber_countrycode"
+                          maxlength="20"
+                          checktype="c7"
+                          value=""
+                          phoneFormat="1"
+                          isCountryCodeEnabled="false"
+                          fieldType="11"
+                          id="international_PhoneNumber_countrycode"
+                          valType="number"
+                          phoneFormatType="1"
+                          placeholder=""
+                        />
+                      </span>
+                      <div class="zf-clearBoth"></div>
+                    </div>
+                    <p
+                      id="PhoneNumber_error"
+                      class="zf-errorMessage"
+                      style="display: none"
+                    >
+                      Please enter your Phone number
+                    </p>
+                  </div>
+                  <div class="zf-clearBoth"></div>
+                </li>
+                <!---------Phone Ends Here---------->
+              </div>
+              <div class="main-f">
+                <!---------Dropdown Starts Here---------->
+                <li class="zf-tempFrmWrapper zf-large col1">
+                  <label class="zf-labelName">
+                    Reason for contacting us
+                    <em class="zf-important">*</em>
+                  </label>
+                  <div class="zf-tempContDiv">
+                    <select class="zf-form-sBox" name="Dropdown" checktype="c1">
+                      <option selected="true" value="-Select-" disabled>
+                        Select
+                      </option>
+                      <option value="Order&#x20;Status">Order Status</option>
+                      <option value="Repair&#x20;Service">
+                        Repair Service
+                      </option>
+                      <option value="Warranty&#x20;Registration">
+                        Warranty Registration
+                      </option>
+                      <option
+                        value="Delivery&#x20;to&#x20;countries&#x20;outside&#x20;Germany"
+                      >
+                        Delivery to countries outside Germany
+                      </option>
+                      <option value="Pod&#x20;Issue">Pod Issue</option>
+                      <option value="Payment&#x20;Inquiries">
+                        Payment Inquiries
+                      </option>
+                      <option value="General&#x20;Inquiry">
+                        General Inquiry
+                      </option>
+                      <option value="Virtual&#x20;Service">
+                        Virtual Service
+                      </option>
+                    </select>
+                    <p
+                      id="Dropdown_error"
+                      class="zf-errorMessage"
+                      style="display: none"
+                    >
+                      Please select an option
+                    </p>
+                  </div>
+                  <div class="zf-clearBoth"></div>
+                </li>
+                <!---------Dropdown Ends Here---------->
+                <!---------Number Starts Here---------->
+                <li class="zf-tempFrmWrapper zf-large col2">
+                  <label class="zf-labelName"> Order Number (Optional) </label>
+                  <div class="zf-tempContDiv">
                     <span>
                       <input
                         type="text"
-                        compname="PhoneNumber"
-                        name="PhoneNumber_countrycode"
-                        maxlength="20"
-                        checktype="c7"
+                        name="Number"
+                        checktype="c2"
                         value=""
-                        phoneFormat="1"
-                        isCountryCodeEnabled="false"
-                        fieldType="11"
-                        id="international_PhoneNumber_countrycode"
-                        valType="number"
-                        phoneFormatType="1"
+                        maxlength="18"
                         placeholder=""
-                      />
-                    </span>
-                    <div class="zf-clearBoth"></div>
-                  </div>
-                  <p
-                    id="PhoneNumber_error"
-                    class="zf-errorMessage"
-                    style="display: none"
-                  >
-                    Please enter your Phone number
-                  </p>
-                </div>
-                <div class="zf-clearBoth"></div>
-              </li>
-              <!---------Phone Ends Here---------->
-              <!---------Dropdown Starts Here---------->
-              <li class="zf-tempFrmWrapper zf-large">
-                <label class="zf-labelName">
-                  Reason for contacting us
-                  <em class="zf-important">*</em>
-                </label>
-                <div class="zf-tempContDiv">
-                  <select class="zf-form-sBox" name="Dropdown" checktype="c1">
-                    <option selected="true" value="-Select-" disabled>
-                      Select
-                    </option>
-                    <option value="Order&#x20;Status">Order Status</option>
-                    <option value="Repair&#x20;Service">Repair Service</option>
-                    <option value="Warranty&#x20;Registration">
-                      Warranty Registration
-                    </option>
-                    <option
-                      value="Delivery&#x20;to&#x20;countries&#x20;outside&#x20;Germany"
+                    /></span>
+                    <p
+                      id="Number_error"
+                      class="zf-errorMessage"
+                      style="display: none"
                     >
-                      Delivery to countries outside Germany
-                    </option>
-                    <option value="Pod&#x20;Issue">Pod Issue</option>
-                    <option value="Payment&#x20;Inquiries">
-                      Payment Inquiries
-                    </option>
-                    <option value="General&#x20;Inquiry">
-                      General Inquiry
-                    </option>
-                    <option value="Virtual&#x20;Service">
-                      Virtual Service
-                    </option>
-                  </select>
-                  <p
-                    id="Dropdown_error"
-                    class="zf-errorMessage"
-                    style="display: none"
-                  >
-                    Please select an option
-                  </p>
-                </div>
-                <div class="zf-clearBoth"></div>
-              </li>
-              <!---------Dropdown Ends Here---------->
-              <!---------Number Starts Here---------->
-              <li class="zf-tempFrmWrapper zf-large">
-                <label class="zf-labelName"> Order Number (Optional) </label>
-                <div class="zf-tempContDiv">
-                  <span>
-                    <input
-                      type="text"
-                      name="Number"
-                      checktype="c2"
-                      value=""
-                      maxlength="18"
-                      placeholder=""
-                  /></span>
-                  <p
-                    id="Number_error"
-                    class="zf-errorMessage"
-                    style="display: none"
-                  >
-                    Invalid value
-                  </p>
-                </div>
-                <div class="zf-clearBoth"></div>
-              </li>
-              <!---------Number Ends Here---------->
+                      Invalid value
+                    </p>
+                  </div>
+                  <div class="zf-clearBoth"></div>
+                </li>
+                <!---------Number Ends Here---------->
+              </div>
               <!---------Single Line Starts Here---------->
               <li class="zf-tempFrmWrapper zf-large">
                 <label class="zf-labelName">
