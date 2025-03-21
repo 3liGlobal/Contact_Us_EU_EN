@@ -720,7 +720,7 @@ select:focus-visible {
 
 .zf-fmFooter {
   margin: 0;
-  padding: 25px;
+  padding: 25px 0px;
 }
 
 .zf-fmFooter .zf-submitColor {
@@ -1304,6 +1304,9 @@ select {
   width: 50%;
 }
 @media only screen and (max-width: 600px) {
+  .zf-fmFooter {
+    padding: 25px 20px;
+  }
   .one-line {
     flex-direction: column;
   }
