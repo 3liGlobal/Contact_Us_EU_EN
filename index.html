@@ -329,13 +329,6 @@
       window.addEventListener("message", function (event) {
         var email = event.data;
         document.getElementById("Email").value = email;
-        let checkField = setInterval(function () {
-          if ($("#Email").val() !== "") {
-            $("#loader").hide();
-            clearInterval(checkField);
-          }
-        }, 100);
-        $("#loader").hide();
       });
     </script>
   </body>
