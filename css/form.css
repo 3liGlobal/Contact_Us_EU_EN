@@ -350,7 +350,7 @@ select:focus-visible {
 .zf-tempFrmWrapper .zf-labelName {
   font-weight: 400;
   font-size: 14px;
-  color: #444;
+  color: #000000;
 }
 
 .zf-form-sBox {
@@ -402,7 +402,7 @@ select:focus-visible {
 .zf-name .zf-tempContDiv span label {
   font-weight: 400;
   font-size: 14px;
-  color: #444;
+  color: #000000;
 }
 
 .zf-phone .zf-tempContDiv span label {
