@@ -286,29 +286,26 @@
               </li>
 
               <li class="zf-tempFrmWrapper zf-small" style="display: none;">
-                <label class="zf-labelName"> UTM Medium </label>
-                <div class="zf-tempContDiv">
-                  <span>
-                    <input
-                      type="text"
-                      name="SingleLine7"
-                      checktype="c1"
-                      value=""
-                      maxlength="255"
-                      fieldType="1"
-                      placeholder=""
-                      id="UTM"
-                  /></span>
-                  <p
-                    id="SingleLine7_error"
-                    class="zf-errorMessage"
-                    style="display: none"
-                  >
-                    Invalid value
-                  </p>
-                </div>
-                <div class="zf-clearBoth"></div>
-              </li>
+  <label class="zf-labelName"> UTM Medium </label>
+  <div class="zf-tempContDiv">
+    <span>
+      <input
+        type="text"
+        name="UTM_Medium"
+        checktype="c1"
+        value=""
+        maxlength="255"
+        fieldType="1"
+        placeholder=""
+        id="UTM"
+      />
+    </span>
+    <p id="UTM_Medium_error" class="zf-errorMessage" style="display: none;">
+      Invalid value
+    </p>
+  </div>
+  <div class="zf-clearBoth"></div>
+</li>
 
               <!---------Multiple Line Ends Here---------->
             </ul>
@@ -347,6 +344,7 @@
         "Number",
         "SingleLine",
         "MultiLine",
+        "UTM_Medium"
       ];
       var isSalesIQIntegrationEnabled = false;
       var salesIQFieldsArray = [];
