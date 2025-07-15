@@ -284,6 +284,32 @@
                 </div>
                 <div class="zf-clearBoth"></div>
               </li>
+
+              <li class="zf-tempFrmWrapper zf-small" style="display: none;">
+                <label class="zf-labelName"> UTM Medium </label>
+                <div class="zf-tempContDiv">
+                  <span>
+                    <input
+                      type="text"
+                      name="SingleLine7"
+                      checktype="c1"
+                      value=""
+                      maxlength="255"
+                      fieldType="1"
+                      placeholder=""
+                      id="UTM"
+                  /></span>
+                  <p
+                    id="SingleLine7_error"
+                    class="zf-errorMessage"
+                    style="display: none"
+                  >
+                    Invalid value
+                  </p>
+                </div>
+                <div class="zf-clearBoth"></div>
+              </li>
+
               <!---------Multiple Line Ends Here---------->
             </ul>
           </div>
@@ -329,6 +355,16 @@
       window.addEventListener("message", function (event) {
         var email = event.data;
         document.getElementById("Email").value = email;
+
+        if (event.data.utm_medium) {
+      const UTMmedium = document.getElementById("UTM");
+      console.log("UTMmedium", UTMmedium);
+
+      if (UTMmedium) {
+        UTMmedium.value = event.data.utm_medium || "";
+      }
+    }
+
       });
     </script>
   </body>
